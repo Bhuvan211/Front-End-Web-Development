@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>CSS Positions and Box Model</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: blue;
+                text-shadow: 5px 5px 5px grey;
+            }
+            .parent {
+                background-color: aqua;
+                height: 400px;
+                width: 400px;
+                margin-left: 220px;
+                position: absolute;
+                box-shadow: 5px 5px 5px 5px grey;
+            }
+            .parent1{
+                background-color: lightgreen;
+                height: 150px;
+                width: 150px;
+                margin-left: 130px;
+                margin-top: 140px;
+                box-shadow: 5px 5px 5px 5px grey;
+            }
+            .child1{
+                background-color: crimson;
+                width: 100px;
+                height: 100px;
+                margin-left: 30px;
+                /* margin-right: 150px; */
+                margin-top: 20px;
+                /* margin-bottom: 150px; */
+                position:absolute;
+                box-shadow: 5px 5px 5px 5px rgb(128, 128, 128);
+            }
+            .subchild1{
+                background-color: rgb(17, 61, 237);
+                height: 50px;
+                width: 50px;
+                margin-left: 25px;
+                margin-top: 25px;
+                border-radius: 50px;
+                box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <h1><marquee>CSS Positions and Box Model</marquee></h1>
+        <div class="parent"><div class="parent1"><div class="child1"><div class="subchild1"></div></div></div></div>
+    </body>
+</html>
