@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Instagram Login</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111010;
+            margin-left: 200px;
+        }
+        .login-container {
+            margin-top: 100px;
+            background-color: #000000;
+             border: 1px solid #dbdbdb;
+            padding: 40px;
+            width: 350px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;            
+        }
+        button {
+            background-color: #0095f6;
+            color: white;
+            width: 375px;
+            padding: 10px;
+        }
+        button:hover {
+            background-color: #007bb5;
+        }
+        .login-divider, .login-footer, .login-options {
+            text-align: center;
+            margin: 20px;
+            color: #999;
+        }       
+       
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .login-footer {
+           background-color: #000000;
+            border: 1px solid #dbdbdb;
+            margin-left: 3px;
+            padding: 40px;
+            width: 350px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+	</style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Instagram</h1>
+        <form action="">
+            <input type="text" placeholder="Phone number, username, or email">
+            <br><br>
+            <input type="password" placeholder="Password">
+            <br><br>
+            <button onclick="Btn()">Log in</button>
+            <script>
+            function Btn() {
+                alert("Login Successfully !!!");
+            }
+            </script>
+        </form>
+        <div class="login-divider">
+            <p>-----------------------------Or-------------------------</p>
+        </div>
+        <div class="login-options">
+            <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATlbmDzjsDpfWQ-jbKYZ0ecslZGzgmwIQwOmSLsH-j3nj3L2Jx9bpRRlxmF0_Tw6pE6jlmEEI4ZaJj3FZThxo1f6lowC7ORKxmIlm-vRIQT0C-735_GLFE7opBIfSCjLuEC8k1iKZuLsVzac3ISGB7uhVYsN83EE9O3We3Jezau5WDp_waE0K5bEBawjs9NsSMNzvfuc4mvg-gZCN8pEmfZvgB5OMDAQC5Q5qSirksSKHIP6Sv_R8usHKusbgS-cBI8m" class="facebook-login">Log in with Facebook</a><br><br>
+            <a href="https://www.instagram.com/accounts/password/reset/" class="forgot">Forgot password?</a>
+        </div>
+    </div>
+     <div class="login-footer">
+            <p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/?hl=en">Sign up</a></p>
+    </div>	
+</body>
+</html>
